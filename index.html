@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Girlhood Universe — a dreamy, Pinterest-inspired space for your dreams, goals, memories, journal, and quotes." />
+  <title>Girlhood Universe ✿ Dreamy Journal & Mood Space</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Magical background -->
+  <div class="bg-gradient" aria-hidden="true"></div>
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+  <div class="butterflies" id="butterflies" aria-hidden="true"></div>
+  <div class="clouds" id="clouds" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="brand">✿ Girlhood Universe</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#dreams">Dreams</a>
+        <a href="#goals">Goals</a>
+        <a href="#memories">Memories</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#journal">Journal</a>
+        <a href="#quotes">Quotes</a>
+        <a href="#letter">Future Me</a>
+      </nav>
+      <a href="#journal" class="btn-primary nav-cta">Open Journal</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">welcome to your soft little world</p>
+        <h1 class="display">Girlhood<br/><em>Universe</em></h1>
+        <p class="lede">A dreamy space to collect your dreams, goals, memories, and the quiet magic of being you.</p>
+        <div class="hero-cta">
+          <a href="#dreams" class="btn-primary">Begin the dream ✦</a>
+          <a href="#journal" class="btn-ghost">Write in journal</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dreams -->
+    <section id="dreams" class="section">
+      <header class="section-head">
+        <p class="eyebrow">✦ chapter one</p>
+        <h2>Dreams</h2>
+        <p class="muted">Whisper your wishes to the universe.</p>
+      </header>
+      <form class="add-form glass" id="dreamForm">
+        <input type="text" id="dreamInput" placeholder="A dream you're holding close..." maxlength="140" required />
+        <button class="btn-primary" type="submit">Add dream</button>
+      </form>
+      <ul class="cards" id="dreamsList"></ul>
+    </section>
+
+    <!-- Goals -->
+    <section id="goals" class="section">
+      <header class="section-head">
+        <p class="eyebrow">✦ chapter two</p>
+        <h2>Goals</h2>
+        <p class="muted">Tiny stars to chase, one at a time.</p>
+      </header>
+      <form class="add-form glass" id="goalForm">
+        <input type="text" id="goalInput" placeholder="A goal to bloom into..." maxlength="140" required />
+        <button class="btn-primary" type="submit">Add goal</button>
+      </form>
+      <ul class="cards" id="goalsList"></ul>
+    </section>
+
+    <!-- Memories -->
+    <section id="memories" class="section">
+      <header class="section-head">
+        <p class="eyebrow">✦ chapter three</p>
+        <h2>Memories</h2>
+        <p class="muted">A polaroid gallery of soft moments.</p>
+      </header>
+      <form class="add-form glass" id="memoryForm">
+        <input type="text" id="memoryTitle" placeholder="Title (e.g. golden hour walk)" maxlength="60" required />
+        <input type="text" id="memoryNote" placeholder="A little note..." maxlength="200" />
+        <input type="file" id="memoryImage" accept="image/*" />
+        <button class="btn-primary" type="submit">Save memory</button>
+      </form>
+      <div class="polaroids" id="memoriesList"></div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="section">
+      <header class="section-head">
+        <p class="eyebrow">✦ chapter four</p>
+        <h2>Hobbies</h2>
+        <p class="muted">Little joys that make your heart hum.</p>
+      </header>
+      <div class="hobby-grid">
+        <div class="hobby glass"><span>📚</span><h3>Reading</h3></div>
+        <div class="hobby glass"><span>🎨</span><h3>Painting</h3></div>
+        <div class="hobby glass"><span>🌸</span><h3>Gardening</h3></div>
+        <div class="hobby glass"><span>🎶</span><h3>Music</h3></div>
+        <div class="hobby glass"><span>☕</span><h3>Coffee dates</h3></div>
+        <div class="hobby glass"><span>📷</span><h3>Photography</h3></div>
+        <div class="hobby glass"><span>✿</span><h3>Journaling</h3></div>
+        <div class="hobby glass"><span>🕯️</span><h3>Self-care</h3></div>
+      </div>
+    </section>
+
+    <!-- Journal -->
+    <section id="journal" class="section">
+      <header class="section-head">
+        <p class="eyebrow">✦ chapter five</p>
+        <h2>Journal</h2>
+        <p class="muted">Write it out. The page is listening.</p>
+      </header>
+      <form class="add-form glass column" id="journalForm">
+        <input type="text" id="journalTitle" placeholder="Entry title..." maxlength="80" required />
+        <textarea id="journalBody" placeholder="Dear diary..." rows="5" required></textarea>
+        <button class="btn-primary" type="submit">Save entry</button>
+      </form>
+      <ul class="journal-list" id="journalList"></ul>
+    </section>
+
+    <!-- Quotes -->
+    <section id="quotes" class="section">
+      <header class="section-head">
+        <p class="eyebrow">✦ chapter six</p>
+        <h2>Quotes</h2>
+        <p class="muted">Words to keep close.</p>
+      </header>
+      <div class="quote-feature glass" id="quoteFeature">
+        <blockquote id="quoteText">— click below for a little magic —</blockquote>
+        <cite id="quoteAuthor"></cite>
+        <div class="quote-actions">
+          <button class="btn-primary" id="newQuoteBtn">New quote ✦</button>
+          <button class="btn-ghost" id="saveQuoteBtn">♡ Save</button>
+        </div>
+      </div>
+      <h3 class="sub">Your saved quotes</h3>
+      <ul class="quote-cards" id="savedQuotes"></ul>
+    </section>
+
+    <!-- Future Self Letter -->
+    <section id="letter" class="section">
+      <header class="section-head">
+        <p class="eyebrow">✦ chapter seven</p>
+        <h2>Letter to Future Me</h2>
+        <p class="muted">Write a love note to who you're becoming.</p>
+      </header>
+      <form class="add-form glass column" id="letterForm">
+        <textarea id="letterBody" placeholder="Dear future me..." rows="8"></textarea>
+        <button class="btn-primary" type="submit">Save letter</button>
+      </form>
+      <p class="muted small" id="letterSaved"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>made with ♡ in the girlhood universe</p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
